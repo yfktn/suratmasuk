@@ -1,0 +1,10 @@
+name: SuratMasuk
+form: $/yfktn/suratmasuk/models/suratmasuk/fields.yaml
+modelClass: Yfktn\SuratMasuk\Models\SuratMasuk
+defaultRedirect: yfktn/suratmasuk/suratmasuk
+create:
+    redirect: 'yfktn/suratmasuk/suratmasuk/update/:id'
+    redirectClose: yfktn/suratmasuk/suratmasuk
+update:
+    redirect: yfktn/suratmasuk/suratmasuk
+    redirectClose: yfktn/suratmasuk/suratmasuk

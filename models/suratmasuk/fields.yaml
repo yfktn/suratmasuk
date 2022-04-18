@@ -1,0 +1,34 @@
+fields:
+    dari:
+        label: Pengirim
+        span: full
+        type: text
+        comment: 'Ketikkan instansi/nama pengirim.'
+        required: true
+    hal:
+        label: Hal
+        span: full
+        type: text
+        comment: 'Ketikkan hal/perihal surat.'
+    nomor:
+        label: Nomor
+        span: auto
+        type: text
+        comment: 'Ketikkan nomor surat.'
+    tanggal:
+        label: Tanggal
+        mode: date
+        span: auto
+        type: datepicker
+        format: 'd-m-Y'
+        comment: 'Ketikkan tanggal surat.'
+    daftarDokumen:
+        label: 'Dokumen Surat'
+        span: auto
+        mode: file
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        type: fileupload
+        comment: 'Upload dokumen surat hasil scan.'
