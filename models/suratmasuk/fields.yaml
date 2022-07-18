@@ -22,6 +22,16 @@ fields:
         type: datepicker
         format: 'd-m-Y'
         comment: 'Ketikkan tanggal surat.'
+    kecepatan_penyampaian:
+        label: Kecepatan Penyampaian
+        default: biasa
+        span: auto
+        type: dropdown
+    tingkat_keamanan:
+        label: Tingkat Keamanan
+        span: auto
+        default: biasa
+        type: dropdown
     daftarDokumen:
         label: 'Dokumen Surat'
         span: auto

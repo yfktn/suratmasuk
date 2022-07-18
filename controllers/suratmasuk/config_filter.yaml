@@ -1,0 +1,13 @@
+scopes:
+  kecepatan:
+    label: Kecepatan Penyampaian
+    type: group
+    conditions: kecepatan_penyampaian in (:filtered)
+    modelClass: Yfktn\SuratMasuk\Models\SuratMasuk
+    options: getKecepatanPenyampaianOptions
+  keamanan:
+    label: Tingkat Keamanan
+    type: group
+    conditions: tingkat_keamanan in (:filtered)
+    modelClass: Yfktn\SuratMasuk\Models\SuratMasuk
+    options: getTingkatKeamananOptions

@@ -3,3 +3,6 @@
 1.0.2:
     - 'Created table yfktn_suratmasuk_'
     - builder_table_create_yfktn_suratmasuk.php
+1.0.3:
+    - 'Tambahkan keamanan dan kecepatan penyampaian Surat Masuk'
+    - migration0103.php

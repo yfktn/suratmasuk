@@ -18,3 +18,10 @@ columns:
         type: date
         sortable: true
         format: d-m-Y
+    kecepatan_penyampaian:
+        label: Kecepatan Penyampaian
+        type: text
+    tingkat_keamanan:
+        label: Tingkat Keamanan
+        type: text
+    

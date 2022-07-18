@@ -61,5 +61,35 @@ class SuratMasuk extends Model
         $tanggal = \Carbon\Carbon::createFromFormat('Y-m-d', $this->tanggal)->format('d-m-Y');
         return "Surat Dari {$this->dari} Nomor {$tanggal} Hal {$this->hal}";
     }
+
+    public function getTingkatKeamananOptions()
+    {
+        return [
+            'sangat rahasia' => 'Sangat Rahasia',
+            'rahasia' => 'Rahasia',
+            'biasa' => 'Biasa',
+        ];
+    }
+
+    public function getTingkatKeamananAttribute($value)
+    {
+        $options = $this->getTingkatKeamananOptions();
+        return isset($options[$value])? $options[$value]: 'Biasa';
+    }
+
+    public function getKecepatanPenyampaianOptions()
+    {
+        return [
+            'sangat segera' => 'Sangat Segera / Kilat',
+            'segera' => 'Segera',
+            'biasa' => 'Biasa'
+        ];
+    }
+
+    public function getKecepatanPenyampaianAttribute($value)
+    {
+        $options = $this->getKecepatanPenyampaianOptions();
+        return isset($options[$value])? $options[$value]: 'Biasa';
+    }
     
 }
