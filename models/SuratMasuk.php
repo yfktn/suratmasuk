@@ -47,6 +47,8 @@ class SuratMasuk extends Model
             'Nomor Surat' => $this->nomor,
             'Hal Surat' => $this->hal,
             'Tanggal Surat' => \Carbon\Carbon::createFromFormat('Y-m-d', $this->tanggal)->format('d-m-Y'),
+            'Tanggal Dicatatkan' => $this->created_at->format('d-m-Y H:i'),
+            'Tanggal Pembaharuan' => $this->updated_at->format('d-m-Y H:i'),
             'Dokumen' => $dokumen
         ];
     }
