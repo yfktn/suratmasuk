@@ -26,7 +26,7 @@ class SuratMasuk extends Model
     ];
 
     public $attachMany = [
-        'daftarDokumen' => 'System\Models\File'
+        'daftarDokumen' => ['System\Models\File', 'public' => false]
     ];
 
     /**

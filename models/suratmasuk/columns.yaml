@@ -14,7 +14,7 @@ columns:
         type: text
         searchable: true
     tanggal:
-        label: Tanggal
+        label: Tanggal Surat
         type: date
         sortable: true
         format: d-m-Y
@@ -24,4 +24,8 @@ columns:
     tingkat_keamanan:
         label: Tingkat Keamanan
         type: text
+    created_at:
+        label: Tanggal Diterima
+        type: datetime
+        format: d-m-Y H:i
     
